@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.fundo {
+    background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(79, 42, 165));
+    height: 100vh;
+    color: white;
+    /* Adicione mais estilos conforme necessário */
+}
+
+.calculadora {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, rgb(49, 49, 49), rgb(27, 25, 29));
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.soma{
+    display: flex;
+    justify-content: flex-end;
+    opacity: 0.5;
+    padding: 15px;
+    
+}
+
+.resultado{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.resultado span{
+    opacity: 0.5;
+}
+
+#resultado {
+    font-size: 30px;
+}
+.fundo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.botao-ce{
+    font-size: 20px;
+    color: white;
+    background-image: linear-gradient(10deg, rgb(70, 70, 70), rgb(12, 12, 12));
+    color: #fd4f4f ;
+    border-radius: 15px;
+    width: 64px;
+    height: 64px;
+}
+
+.botao-igual{
+    font-size: 20px;
+    color: white;
+    background-color: #FA5D5D;
+    border-radius: 15px;
+    width: 64px;
+    height: 64px;
+}
+.botao-igual img{
+    filter: invert(100%);
+}
+
+.botao-minus{
+    font-size: 20px;
+    color: white;
+    background-color: #782828 ;
+    border-radius: 15px;
+    width: 64px;
+    height: 64px;
+}
+.botao-minus img{
+    filter: invert(100%);
+}
+.botao {
+    font-size: 20px;
+    color: white;
+    background-image: linear-gradient(10deg, rgb(70, 70, 70), rgb(12, 12, 12));
+    border-radius: 15px;
+    width: 64px;
+    height: 64px;
+    
+}
+.botao-divide{
+    font-size: 20px;
+    color: white;
+    background-color: #782828 ;
+    border-radius: 15px;
+    width: 64px;
+    height: 64px;
+}
+.botao-divide img{
+    filter: invert(100%);
+}
+
+.botao-cor {
+    font-size: 20px;
+    color: white;
+    background-color: #782828 ;
+    border-radius: 15px;
+    width: 64px;
+    height: 64px;
+}
+
+.botao-sinal {
+    align-items: center;
+    background-color: #782828 ;
+    position: relative;
+    border-radius: 15px;
+    width: 64px;
+    height: 64px;
+}
+.botao-sinal img{
+    filter: invert(100%);
+}
+.botao-plus{
+    color: white;
+    background-image: linear-gradient(10deg, rgb(70, 70, 70), rgb(12, 12, 12));
+    border-radius: 15px;
+    width: 64px;
+    height: 64px;
+}
+
+.botao-plus img{
+    width: 25px;
+    filter: invert(100%);
+}
+
+td{
+    padding: 3px;
+}
