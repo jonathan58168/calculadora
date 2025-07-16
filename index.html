@@ -9,45 +9,32 @@
     <script src="calculadora.js"></script>
 </head>
 <body>
-    <div class="fundo">
+    <div class="container">
         <h1>Sua Calculadora</h1>
         <div class="calculadora">
-            <div class="soma">
-                <p id="resultado">0</p>
+            <div class="display" id="resultado">0</div>
+            <div class="buttons">
+                <button class="botao botao-ce" onclick="clean()">CE</button>
+                <button class="botao" onclick="back()">C</button>
+                <button class="botao" onclick="insert('%')">%</button>
+                <button class="botao botao-divide" onclick="insert('/')">/</button>
+                <button class="botao" onclick="insert('7')">7</button>
+                <button class="botao" onclick="insert('8')">8</button>
+                <button class="botao" onclick="insert('9')">9</button>
+                <button class="botao botao-multiplicar" onclick="insert('*')">X</button>
+                <button class="botao" onclick="insert('4')">4</button>
+                <button class="botao" onclick="insert('5')">5</button>
+                <button class="botao" onclick="insert('6')">6</button>
+                <button class="botao botao-minus" onclick="insert('-')">-</button>
+                <button class="botao" onclick="insert('1')">1</button>
+                <button class="botao" onclick="insert('2')">2</button>
+                <button class="botao" onclick="insert('3')">3</button>
+                <button class="botao botao-sinal" onclick="insert('+')">+</button>
+                <button class="botao botao-zero" onclick="insert('0')">0</button>
+                <button class="botao" onclick="insert(',')">,</button>
+                <button class="botao botao-igual" onclick="calcular()">=
+                </button>
             </div>
-            <table>
-                <tr>
-                    <td><button class="botao botao-ce" onclick="clean()">CE</button></td>
-                    <td><button class="botao" onclick="back()">C</button></td>
-                    <td><button class="botao" onclick="insert('%')">%</button></td>
-                    <td><button class="botao botao-divide" onclick="insert('/')">/</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('7')">7</button></td>
-                    <td><button class="botao" onclick="insert('8')">8</button></td>
-                    <td><button class="botao" onclick="insert('9')">9</button></td>
-                    <td><button class="botao botao-multiplicar" onclick="insert('*')">X</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('4')">4</button></td>
-                    <td><button class="botao" onclick="insert('5')">5</button></td>
-                    <td><button class="botao" onclick="insert('6')">6</button></td>
-                    <td><button class="botao botao-minus" onclick="insert('-')">-</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao" onclick="insert('1')">1</button></td>
-                    <td><button class="botao" onclick="insert('2')">2</button></td>
-                    <td><button class="botao" onclick="insert('3')">3</button></td>
-                    <td><button class="botao botao-sinal" onclick="insert('+')">+</button></td>
-                </tr>
-                <tr>
-                    <td><button class="botao botao-zero" onclick="insert('0')">0</button></td>
-                    <td><button class="botao" onclick="insert(',')">,</button></td>
-                    <td><button class="botao botao-igual" onclick="calcular()">
-                        <img src="img/equals.svg" alt="">
-                    </button></td>
-                </tr>
-            </table>
             <div id="historico" class="historico"></div> <!-- Seção do histórico -->
         </div>
     </div>
